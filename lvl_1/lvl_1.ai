@@ -1,0 +1,9 @@
+if (getWeapon() != WEAPON_PISTOL)
+	setWeapon(WEAPON_PISTOL);
+
+var enemy = getNearestEnemy();
+
+moveToward(enemy);
+
+while (getTP() > 2)
+	useWeapon(enemy);
